@@ -1,0 +1,20 @@
+extends ../layouts/main-layout
+
+block head
+  +head({
+    'paths': [
+      'css/contacts.css'
+    ]
+  })
+
+block content
+  main.content
+    include ../blocks/buttons-section
+
+    include ../blocks/faq
+
+    include ../blocks/features-section
+
+    +offer({
+      className: 'shadow'
+    })

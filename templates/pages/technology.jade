@@ -1,0 +1,12 @@
+extends ../layouts/main-layout
+
+block head
+  +head({
+    'paths': [
+      'css/index.css'
+    ]
+  })
+
+block content
+  main.content
+    include ../blocks/banner
