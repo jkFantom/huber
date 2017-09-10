@@ -1,0 +1,21 @@
+@import 'variables';
+
+.button {
+  @include transition;
+
+  display: inline-block;
+  padding: 23px;
+  border: none;
+  background: $color-link;
+  border-radius: 8px;
+  font: 18px/1.24 'museo_sans_cyrl500', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background: $color-link-dark;
+    text-decoration: none;
+  }
+}

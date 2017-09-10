@@ -1,0 +1,19 @@
+extends ../layouts/main-layout
+
+block head
+  +head({
+    'paths': [
+      'css/contacts.css'
+    ]
+  })
+
+block content
+  main.content
+    .contacts-wrap
+      include ../blocks/seller-info
+
+      include ../blocks/contacts-box
+
+    +offer({
+      className: 'shadow'
+    })

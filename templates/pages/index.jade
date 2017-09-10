@@ -1,0 +1,20 @@
+extends ../layouts/main-layout
+
+block head
+  +head({
+    'paths': [
+      'css/index.css'
+    ]
+  })
+
+block content
+  main.content
+    include ../blocks/banner
+
+    include ../blocks/tech-info
+
+    include ../blocks/reviews
+
+    +offer({
+      className: 'shadow'
+    })

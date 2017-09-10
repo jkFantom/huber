@@ -1,0 +1,151 @@
+@import 'variables';
+
+.offer {
+  padding: 60px 0;
+}
+
+.offer__container {
+  padding: 50px 58px 58px;
+  border-radius: 4px;
+  background: #fff url(../img/offer-img.jpg) no-repeat;
+  background-position: calc(100% - 85px) 86px;;
+
+  &_shadow {
+    box-shadow: 0 6px 51px rgba(94, 123, 150, 0.39);
+  }
+}
+
+.offer__form {
+  width: 578px;
+  padding-top: 40px;
+  background: #fff;
+}
+
+.offer__toggles-title {
+  margin-bottom: 10px;
+  font: 14px/1.3 'museo_sans_cyrl300', Arial, sans-serif;
+  color: #181818;
+}
+
+.offer__toggles-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+// toggles
+
+.toggle {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+
+  &_checkbox {
+    padding-left: 28px;
+  }
+
+  &_checkbox_button {
+    width: calc(50% - 30px);
+    margin: 15px;
+  }
+}
+
+.toggle__box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #cadae5;
+  border-radius: 2px;
+  background: #fff;
+
+  &::after {
+    @include transition;
+
+    position: relative;
+    top: -1px;
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid $color-link;
+    border-bottom: 2px solid $color-link;
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+.toggle__input:checked ~ .toggle__box::after {
+  opacity: 1;
+}
+
+.toggle__button-body {
+  @include transition;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  padding: 10px;
+  border: 2px solid #c3d5e1;
+  background-color: transparent;
+  border-radius: 25px;
+  font: 12px/1.3 'museo_sans_cyrl700', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+}
+
+.toggle__button-body:hover,
+.toggle__input:checked ~ .toggle__button-body {
+  background-color: $color-link;
+  border-color: $color-link;
+  color: #fff;
+}
+
+.toggle__input:checked ~ .toggle__button-body:hover {
+  background-color: $color-link-dark;
+  border-color: $color-link-dark;
+}
+
+.toggle__input {
+  position: absolute;
+  z-index: -1000;
+  opacity: 0;
+}
+
+.toggle__text {
+  font: 13px/1.3 'museo_sans_cyrl300', Arial, sans-serif;
+  color: #595959;
+}
+
+// !toogles
+
+.offer__fields {
+  margin-top: 27px;
+}
+
+.offer__columns {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.offer__column {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.offer__form-footer {
+  margin-top: 73px;
+}
+
+.offer__button {
+  min-width: 244px;
+}

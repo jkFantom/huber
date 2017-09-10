@@ -1,0 +1,16 @@
+doctype html
+include ../helpers/mixins/mixins-all
+include ../helpers/mixins/head
+include ../helpers/mixins/offer
+
+html(lang='en')
+  block head
+
+  body
+    include ../partials/header
+
+    block content
+
+    include ../partials/footer
+
+    include ../partials/scripts

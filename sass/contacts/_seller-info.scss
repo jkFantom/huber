@@ -1,0 +1,39 @@
+@import '../common-components/variables';
+
+.seller-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.seller-info__text {
+  width: 810px;
+  font: 38px/1.48 'museo_sans_cyrl900', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.seller-info__text-gray {
+  color: #546a79;
+}
+
+.seller-info__text-blue {
+  color: $color-link;
+}
+
+.seller-info__text-red {
+  color: #ee3738;
+}
+
+.seller-info__icon-wrap {
+  margin: 15px 76px 0 20px;
+  flex-shrink: 0;
+}
+
+.seller-info__icon {
+  display: block;
+}

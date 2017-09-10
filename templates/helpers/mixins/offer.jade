@@ -1,0 +1,53 @@
+-
+	var checkboxTitles = [
+	'домашнего использования', 'Торгующей организации',
+	'Лечебного учреждения', 'Спортивного учреждения'
+	]
+
+mixin toggleCheckboxButton(options)
+	label.toggle.toggle_checkbox_button&attributes({
+		'class': options.node
+	})
+		input.toggle__input(type='checkbox')
+		span.toggle__button-body= options.title
+
+mixin offer(options)
+	if options
+		-
+			var modifier = 'offer__container_' + options.className;
+
+	.offer
+		.box
+			.offer__container&attributes({
+				'class': modifier
+			})
+				.title Запрос коммерческого предложения
+				form.offer__form
+					.offer__toggles
+						.offer__toggles-title Вы интересуетесь для:
+						.offer__toggles-group
+							each val in checkboxTitles
+								+toggleCheckboxButton({
+									title: val
+								})
+
+					.offer__fields.offer__columns
+						.offer__column
+							.control
+								input.control__field(placeholder='Имя')
+								span.control__line
+
+						.offer__column
+							.control
+								input.control__field(placeholder='Телефон')
+								span.control__line
+
+					.offer__form-footer.offer__columns
+						.offer__column
+							button.button.offer__button запрос кп
+
+						.offer__column
+							label.toggle.toggle_checkbox
+								input.toggle__input(type='checkbox')
+								span.toggle__box
+								span.toggle__text Я даю свое согласие на обработку персональных данных и соглашаюсь с <a class='link' href='#'> условиями и политикой конфиденциальности </a>

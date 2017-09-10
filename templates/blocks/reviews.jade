@@ -1,0 +1,23 @@
+.reviews
+	.box
+		.reviews__container
+			.reviews__video
+				.reviews__label
+					.reviews__label-text Специалисты о
+						span huber
+					.reviews__label-num 360
+
+				.video-section
+					iframe(width='560', height='315', src='https://www.youtube.com/embed/6juBT6EnUIc', frameborder='0', allowfullscreen='')
+
+			.reviews__carousel-box
+				.title Вы можете увидеть huber 360
+				.reviews__carousel.events
+					- for (var n = 0; n < 9; n++)
+						.events__item
+							.events__date 25.05-27.05
+							.events__place
+								span МОСКВА
+								= ' '
+								| Ул. Ленина 25
+							.events__type Выставка

@@ -1,0 +1,10 @@
+mixin head(options)
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    title Huber360
+
+    each path in options.paths
+      link(rel='stylesheet', href= path)

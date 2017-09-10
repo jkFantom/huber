@@ -1,0 +1,91 @@
+.footer {
+  padding: 58px 0 55px;
+  background: #0a1a28;
+  font: 14px 'museo_sans_cyrl700', Arial, sans-serif;
+  color: #fff;
+}
+
+.footer__topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 62px;
+}
+
+.footer__logo {
+  display: inline-block;
+}
+
+.footer__logo-img {
+  display: block;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+  width: 938px;
+}
+
+.footer__menu-item {
+  padding: 0 10px
+}
+
+.footer__menu-link {
+  text-transform: uppercase;
+}
+
+.footer__grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__grid-head {
+  width: 210px;
+  font: 12px/1.8 'museo_sans_cyrl300', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #8b969f;
+
+  span {
+    font-family: 'museo_sans_cyrl700', Arial, sans-serif;
+  }
+}
+
+.footer__grid-body {
+  display: flex;
+  justify-content: space-between;
+  width: 938px;
+  margin: 0 -10px;
+}
+
+.footer__grid-item {
+  padding: 0 10px;
+}
+
+.footer__grid-elem {
+  & + & {
+    margin-top: 6px;
+  }
+
+  &_text-gray {
+    font-family: 'museo_sans_cyrl100', 'Arial', sans-serif;
+    color: #98a3ac;
+  }
+}
+
+.footer__phone {
+  font-family: 'museo_sans_cyrl300', 'Arial', sans-serif;
+}
+
+.footer__company {
+  display: block;
+}
+
+.footer__grid-item:last-child .footer__company {
+  margin-top: 5px;
+  padding: 5px 0;
+}
+
+.footer__company-img {
+  display: block;
+}

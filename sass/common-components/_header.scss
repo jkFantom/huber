@@ -1,0 +1,61 @@
+.header {
+  padding-top: 25px;
+  background: #fff;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-block;
+}
+
+.header__logo-img {
+  display: block;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+  margin-top: 17px;
+}
+
+.nav__link {
+  position: relative;
+  padding: 8px 8px 33px;
+  font: 14px/1.2 'museo_sans_cyrl700', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+
+  &::after {
+    @include transition;
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #ee3738;
+    transform: scaleX(0);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.nav__link-inner {
+  display: block;
+  margin-top: 6px;
+  font-family: 'museo_sans_cyrl300', Arial, sans-serif;
+  font-size: 14px;
+  text-transform: none;
+}

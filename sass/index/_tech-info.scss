@@ -1,0 +1,56 @@
+@import '../common-components/variables';
+
+.tech-info {
+  padding: 44px 0 61px;
+  background: #0f2131 url(../img/tech-info-bg.jpg) 50% 50% no-repeat;
+  background-size: contain;
+  color: #a6a9ad;
+}
+
+.tech-info__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tech-info__icon {
+  position: absolute;
+  top: -104px;
+  right: -20px;
+}
+
+.tech-info__aside {
+  width: 504px;
+}
+
+.tech-info__label {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-family: 'museo_sans_cyrl900', Arial, sans-serif;
+  color: #fff;
+}
+
+.tech-info__label-text {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.tech-info__label-num {
+  margin-left: 8px;
+  font-size: 118px;
+  line-height: .87;
+}
+
+.tech-info__text {
+  & + & {
+    margin-top: 18px;
+  }
+}
+
+.tech-info__button {
+  margin-top: 44px;
+  width: 385px;
+}

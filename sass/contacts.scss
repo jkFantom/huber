@@ -1,0 +1,16 @@
+// common components
+
+@import 'common-components/base-set-components';
+@import 'common-components/offer';
+
+// !common components
+
+.contacts-wrap {
+  padding-top: 84px;
+  padding-bottom: 268px;
+  margin-bottom: -268px;
+  background: #dfedf5;
+}
+
+@import 'contacts/seller-info';
+@import 'contacts/contacts-box';

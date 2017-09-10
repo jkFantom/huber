@@ -1,0 +1,147 @@
+@import '../common-components/variables';
+
+.reviews {
+  padding: 75px 0 52px;
+  background: #dfedf5;
+}
+
+.reviews__container {
+  display: flex;
+}
+
+.reviews__video {
+  flex-grow: 1;
+  padding: 58px 44px 30px 30px;
+  background: #fff;
+}
+
+.reviews__carousel-box {
+  display: flex;
+  flex-direction: column;
+  width: 456px;
+  margin-top: -32px;
+  padding: 60px 34px 0;
+  border-radius: 4px 4px 4px 0;
+  background: #fff;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.4);
+}
+
+.reviews__carousel {
+  margin-top: auto;
+  margin-bottom: -28px;
+  padding-top: 15px;
+}
+
+.reviews__label {
+  display: flex;
+  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;
+  margin-bottom: 38px;
+  padding-left: 12px;
+}
+
+.reviews__label-text {
+  font-size: 44px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000;
+
+  span {
+    display: block;
+    margin-top: 2px;
+    color: $color-link;
+    text-align: right;
+  }
+}
+
+.reviews__label-num {
+  margin-left: 15px;
+  font-size: 109px;
+  line-height: .85;
+  color: $color-link;
+}
+
+.video-section {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.events__item {
+  outline: none;
+  min-height: 122px;
+  padding: 10px 0;
+  font-family: 'museo_sans_cyrl300', Arial, sans-serif;
+  color: $color-link;
+}
+
+.events__date {
+  font-size: 18px;
+}
+
+.events__place {
+  font-size: 24px;
+}
+
+.events__type,
+.events__place span {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: 'museo_sans_cyrl900', Arial, sans-serif;
+  color: #244859;
+}
+
+// slick
+
+.events .slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background: #fff;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(94, 123, 150, 0.3);
+
+  &::after {
+    position: relative;
+    content: '';
+    height: 16px;
+    width: 16px;
+    border-right: 2px solid $color-link;
+    border-bottom: 2px solid $color-link;
+  }
+}
+
+.events .slick-next {
+  margin-top: 45px;
+}
+
+.events .slick-prev {
+  display: none !important;
+}
+
+.events .slick-next::after {
+  top: -5px;
+  transform: rotate(45deg);
+}
+
+//slick-next
+
+// !slick
