@@ -1,6 +1,10 @@
 // common components
 
 @import 'common-components/base-set-components';
+@import 'common-components/seller-info';
 @import 'common-components/offer';
 
 // !common components
+
+@import 'purchasing/buttons-section';
+@import 'purchasing/faq';

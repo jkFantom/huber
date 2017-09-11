@@ -1,15 +1,26 @@
 .seller-info
-	.seller-info__text
-		| Продажи
-		= ' '
-		span.seller-info__text-gray HUBER
-		= ' '
-		span.seller-info__text-blue 360
-		=' '
-		| в России <br> ведет официальный дистрибьютор CHATTANOOGA — компания
-		= ' '
-		span.seller-info__text-red РЕАМЕД
+	.seller-info__section
+		.seller-info__text
+			| Продажи
+			= ' '
+			span.seller-info__text-gray HUBER
+			= ' '
+			span.seller-info__text-blue 360
+			=' '
+			| в России <br> ведет официальный дистрибьютор CHATTANOOGA — компания
+			= ' '
+			span.seller-info__text-red РЕАМЕД
 
-	.seller-info__icon-wrap
-		img.seller-info__icon(src='img/seller-info-icon.jpg')
+		.seller-info__icon-wrap
+			img.seller-info__icon(src='img/seller-info-icon.jpg')
 
+	.seller-info__feedback
+		.seller-info__feedback-item
+			span.seller-info__feedback-title Тел.:
+			= ' '
+			span.seller-info__feedback-phone +7 (812) 385-74-01
+
+		.seller-info__feedback-item
+			span.seller-info__feedback-title E-mail:
+			= ' '
+			a.seller-info__feedback-link.link(href='#') info@reamed.su

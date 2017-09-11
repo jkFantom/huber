@@ -285,7 +285,6 @@ select:focus {
 }
 
 .title {
-  position: relative;
   font: 30px/1.3 'museo_sans_cyrl900', 'Arial', sans-serif;
   text-transform: uppercase;
   color: #000;
@@ -604,6 +603,79 @@ select:focus {
   display: block;
 }
 
+.seller-info {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.seller-info__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.seller-info__text {
+  width: 810px;
+  font: 38px/1.48 'museo_sans_cyrl900', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.seller-info__text-gray {
+  color: #546a79;
+}
+
+.seller-info__text-blue {
+  color: #13abfc;
+}
+
+.seller-info__text-red {
+  color: #ee3738;
+}
+
+.seller-info__icon-wrap {
+  margin: 15px 76px 0 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.seller-info__icon {
+  display: block;
+}
+
+.seller-info__feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.seller-info__feedback-item {
+  font: 24px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+}
+
+.seller-info__feedback-item + .seller-info__feedback-item {
+  margin-left: 60px;
+}
+
+.seller-info__feedback-title {
+  color: #000;
+}
+
+.seller-info__feedback-phone {
+  color: #244859;
+}
+
+.seller-info__feedback-link {
+  font-family: 'museo_sans_cyrl300', 'Arial', sans-serif;
+}
+
 .offer {
   padding: 60px 0;
 }
@@ -769,4 +841,134 @@ select:focus {
 
 .offer__button {
   min-width: 244px;
+}
+
+.buttons-section {
+  padding-top: 129px;
+  padding-bottom: 395px;
+  margin-bottom: -395px;
+  background: #dfedf5;
+}
+
+.buttons-group {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.buttons-group__title {
+  margin-bottom: 62px;
+  font: 46px/1.3 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+.buttons-group__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -6px 56px;
+}
+
+.buttons-group__button {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 98px;
+  width: 33.33%;
+  margin: 6px;
+  padding: 10px 10px;
+  background-color: #c2d5df;
+  box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.23), inset 0 1px 0 0 rgba(0, 0, 0, 0.14);
+  border-radius: 49px;
+  font: 20px/1.2 'museo_sans_cyrl500', Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.buttons-group__button:hover {
+  text-decoration: none;
+}
+
+.buttons-group__button::after, .buttons-group__button::before {
+  transition: all 0.25s ease;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  content: '';
+  border-radius: 49px;
+}
+
+.buttons-group__button::after {
+  z-index: -2;
+  background-image: linear-gradient(0deg, #117af1, #13abfc);
+  box-shadow: 0 1px 2px rgba(26, 36, 43, 0.58);
+}
+
+.buttons-group__button::before {
+  z-index: -1;
+  opacity: 0;
+  background-color: #117af1;
+}
+
+.buttons-group__button:hover::before {
+  opacity: 1;
+}
+
+.faq {
+  margin-top: 102px;
+}
+
+.faq__container {
+  padding: 72px 42px 70px;
+  border-radius: 4px;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.39);
+  background: #fff;
+}
+
+.faq__title {
+  margin-bottom: 32px;
+  font: 36px/1.3 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.faq__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  counter-reset: counter;
+  margin-right: -32px;
+}
+
+.faq__item {
+  position: relative;
+  width: 33.33%;
+  margin: 30px 0;
+  padding: 0 32px;
+}
+
+.faq__item::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  counter-increment: counter;
+  content: counter(counter);
+  font: 30px/1 'museo_sans_cyrl900', 'Arial', sans-serif;
+  color: #13abfc;
 }

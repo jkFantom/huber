@@ -1,13 +1,16 @@
-@import '../common-components/variables';
+@import 'variables';
 
 .seller-info {
-  display: flex;
-  justify-content: space-between;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.seller-info__section {
+  display: flex;
+  justify-content: space-between;
 }
 
 .seller-info__text {
@@ -36,4 +39,29 @@
 
 .seller-info__icon {
   display: block;
+}
+
+.seller-info__feedback {
+  display: flex;
+  margin-top: 40px;
+}
+
+.seller-info__feedback-item {
+  font: 24px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+
+  & + & {
+    margin-left: 60px;
+  }
+}
+
+.seller-info__feedback-title {
+  color: #000;
+}
+
+.seller-info__feedback-phone {
+  color: #244859;
+}
+
+.seller-info__feedback-link {
+  font-family: 'museo_sans_cyrl300', 'Arial', sans-serif;;
 }
