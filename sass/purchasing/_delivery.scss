@@ -1,0 +1,56 @@
+@import '../common-components/variables';
+
+.delivery {
+  padding: 88px 0 96px;
+}
+
+.delivery__body {
+  display: flex;
+}
+
+.delivery__aside {
+  width: 37.8%;
+  margin-right: 7%;
+}
+
+.delivery__title {
+  margin-bottom: 26px;
+  font: 36px/1.3 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.delivery__calc {
+  flex-grow: 1;
+  padding: 38px 40px 44px;
+  border-radius: 4px;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.39);
+  background: #fff;
+}
+
+.delivery__calc-title {
+  margin-bottom: 28px;
+  font: 24px/1.3 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.delivery__calc-columns {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  & + & {
+    margin-top: 44px;
+  }
+}
+
+.delivery__column-column {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.delivery__calc-button {
+  margin-top: 50px;
+  width: 228px;
+}
