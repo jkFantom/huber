@@ -23,4 +23,6 @@ $(document).ready(function () {
     infinite: true,
     speed: 600
   });
+
+  $('[data-mask=phone]').mask("+7 (999) 999-99-99");
 })
