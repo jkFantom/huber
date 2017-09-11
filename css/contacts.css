@@ -480,12 +480,20 @@ select:focus {
   text-decoration: none;
 }
 
-.nav__link-inner {
+.nav__link-text {
   display: block;
   margin-top: 6px;
   font-family: 'museo_sans_cyrl300', Arial, sans-serif;
   font-size: 14px;
   text-transform: none;
+}
+
+.nav__link-text_red {
+  color: #fb405a;
+}
+
+.nav__link-text_blue {
+  color: #13abfc;
 }
 
 .footer {

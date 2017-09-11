@@ -8,15 +8,26 @@
 .banner__body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   min-height: 862px;
-  padding-top: 122px;
+  padding-top: 124px;
   padding-bottom: 122px;
 }
 
 .banner__aside {
   width: 652px;
   align-self: flex-end;
+}
+
+.banner__place {
+  margin-bottom: 58px;
+  font: 16px/1 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.banner__place-icon {
+  margin-left: 10px;
+  vertical-align: top;
 }
 
 .banner__title {

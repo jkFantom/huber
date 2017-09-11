@@ -52,10 +52,18 @@
   }
 }
 
-.nav__link-inner {
+.nav__link-text {
   display: block;
   margin-top: 6px;
   font-family: 'museo_sans_cyrl300', Arial, sans-serif;
   font-size: 14px;
   text-transform: none;
+
+  &_red {
+    color: #fb405a;
+  }
+
+  &_blue {
+    color: $color-link;
+  }
 }
