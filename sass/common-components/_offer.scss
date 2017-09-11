@@ -1,7 +1,7 @@
 @import 'variables';
 
 .offer {
-  padding: 60px 0;
+  padding: 64px 0;
 }
 
 .offer__container {
@@ -44,7 +44,7 @@
     padding-left: 28px;
   }
 
-  &_checkbox_button {
+  &_radio_button {
     width: calc(50% - 30px);
     margin: 15px;
   }
@@ -107,11 +107,6 @@
   background-color: $color-link;
   border-color: $color-link;
   color: #fff;
-}
-
-.toggle__input:checked ~ .toggle__button-body:hover {
-  background-color: $color-link-dark;
-  border-color: $color-link-dark;
 }
 
 .toggle__input {

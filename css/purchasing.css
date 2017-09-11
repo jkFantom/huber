@@ -677,7 +677,7 @@ select:focus {
 }
 
 .offer {
-  padding: 60px 0;
+  padding: 64px 0;
 }
 
 .offer__container {
@@ -724,7 +724,7 @@ select:focus {
   padding-left: 28px;
 }
 
-.toggle_checkbox_button {
+.toggle_radio_button {
   width: calc(50% - 30px);
   margin: 15px;
 }
@@ -800,11 +800,6 @@ select:focus {
   background-color: #13abfc;
   border-color: #13abfc;
   color: #fff;
-}
-
-.toggle__input:checked ~ .toggle__button-body:hover {
-  background-color: #1193d8;
-  border-color: #1193d8;
 }
 
 .toggle__input {
@@ -1036,8 +1031,8 @@ select:focus {
 
 .features {
   padding-top: 80px;
-  padding-bottom: 395px;
-  margin-bottom: -395px;
+  padding-bottom: 250px;
+  margin-bottom: -250px;
   background: #dfedf5;
 }
 
@@ -1072,4 +1067,98 @@ select:focus {
   margin-bottom: 17px;
   font: 18px/1.3 'museo_sans_cyrl900', 'Arial', sans-serif;
   text-transform: uppercase;
+}
+
+.calc-profit {
+  margin-top: 63px;
+}
+
+.calc-profit__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 380px;
+  padding: 50px 42px 58px;
+  border-radius: 4px;
+  background: #fff url("../img/calc-profit-bg.jpg") no-repeat;
+  background-position: 19% 100%;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.39);
+}
+
+.calc-profit__aside {
+  width: 515px;
+  margin-left: 40px;
+  padding-top: 15px;
+}
+
+.calc-profit__section + .calc-profit__section {
+  margin-top: 32px;
+}
+
+.calc-profit__control {
+  max-width: 274px;
+}
+
+.calc-profit__hint {
+  margin-bottom: 12px;
+}
+
+.calc-profit__label {
+  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;
+  color: #595959;
+}
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ee3738;
+  cursor: pointer;
+  outline: none;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+.ui-slider-horizontal {
+  height: 4px;
+  margin: 6px 0;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -3px;
+  margin-left: -5px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+  background: #13abfc;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+.ui-widget-content {
+  background: #d4d4d4;
 }

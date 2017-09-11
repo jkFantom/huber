@@ -1,14 +1,14 @@
 -
-	var checkboxTitles = [
+	var radioTitles = [
 	'домашнего использования', 'Торгующей организации',
 	'Лечебного учреждения', 'Спортивного учреждения'
 	]
 
-mixin toggleCheckboxButton(options)
-	label.toggle.toggle_checkbox_button&attributes({
+mixin radioButton(options)
+	label.toggle.toggle_radio_button&attributes({
 		'class': options.node
 	})
-		input.toggle__input(type='checkbox')
+		input.toggle__input(type='radio', name='group')
 		span.toggle__button-body= options.title
 
 mixin offer(options)
@@ -26,8 +26,8 @@ mixin offer(options)
 					.offer__toggles
 						.offer__toggles-title Вы интересуетесь для:
 						.offer__toggles-group
-							each val in checkboxTitles
-								+toggleCheckboxButton({
+							each val in radioTitles
+								+radioButton({
 									title: val
 								})
 

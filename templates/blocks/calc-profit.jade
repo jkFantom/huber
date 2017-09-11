@@ -1,0 +1,19 @@
+.calc-profit
+	.box
+		.calc-profit__container
+			.calc-profit__title.title Калькулятор <br> окупаемости
+			.calc-profit__aside
+				.calc-profit__section
+					.calc-profit__hint Укажите среднее кол-во пациентов <br> за Ваш приемный день (от 1 до 20 человек)
+					.calc-profit__control.control
+						input#val1.control__field(readonly)
+
+				.calc-profit__section
+					.calc-profit__control
+						#slider-range
+
+				.calc-profit__section
+					.calc-profit__hint
+						<span class='calc-profit__label'>HUBER 360</span> окупиться приблизительно за
+					.calc-profit__control.control
+						input.control__field(value='за 0 дней', readonly)

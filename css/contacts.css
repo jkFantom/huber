@@ -604,7 +604,7 @@ select:focus {
 }
 
 .offer {
-  padding: 60px 0;
+  padding: 64px 0;
 }
 
 .offer__container {
@@ -651,7 +651,7 @@ select:focus {
   padding-left: 28px;
 }
 
-.toggle_checkbox_button {
+.toggle_radio_button {
   width: calc(50% - 30px);
   margin: 15px;
 }
@@ -727,11 +727,6 @@ select:focus {
   background-color: #13abfc;
   border-color: #13abfc;
   color: #fff;
-}
-
-.toggle__input:checked ~ .toggle__button-body:hover {
-  background-color: #1193d8;
-  border-color: #1193d8;
 }
 
 .toggle__input {

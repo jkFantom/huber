@@ -1,0 +1,87 @@
+@import '../common-components/variables';
+
+.calc-profit {
+  margin-top: 63px;
+}
+
+.calc-profit__container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 380px;
+  padding: 50px 42px 58px;
+  border-radius: 4px;
+  background: #fff url('../img/calc-profit-bg.jpg') no-repeat;
+  background-position: 19% 100%;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.39);
+}
+
+.calc-profit__aside {
+  width: 515px;
+  margin-left: 40px;
+  padding-top: 15px;
+}
+
+.calc-profit__section {
+  & + & {
+    margin-top: 32px;
+  }
+}
+
+.calc-profit__control {
+  max-width: 274px;
+}
+
+.calc-profit__hint {
+  margin-bottom: 12px;
+}
+
+.calc-profit__label {
+  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;;
+  color: #595959;
+}
+
+// ui-slider
+
+.ui-slider {
+  position: relative;
+  text-align: left;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ee3738;
+  cursor: pointer;
+  outline: none;
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+.ui-slider-horizontal {
+  height: 4px;
+  margin: 6px 0;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -3px;
+  margin-left: -5px;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+  background: $color-link;
+}
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-widget-content {
+  background: #d4d4d4;
+}
+
+// !ui-slider
