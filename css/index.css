@@ -1240,7 +1240,14 @@ select:focus {
 }
 
 .events .slick-next {
+  transition: all 0.15s ease;
   margin-top: 45px;
+}
+
+.events .slick-next:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .events .slick-prev {

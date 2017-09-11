@@ -130,7 +130,13 @@
 }
 
 .events .slick-next {
+  @include transition(all, .15s, ease);
+
   margin-top: 45px;
+
+  &:hover {
+    transform: scale(1.08);
+  }
 }
 
 .events .slick-prev {
