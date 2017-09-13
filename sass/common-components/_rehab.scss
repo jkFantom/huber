@@ -1,0 +1,112 @@
+@import 'variables';
+
+.rehab {
+  padding: 85px 0 90px;
+}
+
+.rehab__title {
+  margin-bottom: 18px;
+  font: 46px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+
+  span {
+    display: block;
+    font: 30px/1.1 'museo_sans_cyrl500', 'Arial', sans-serif;
+  }
+}
+
+.rehab__info {
+  display: flex;
+  margin-bottom: 52px;
+}
+
+.rehab__label {
+  margin-right: 70px;
+  font: 46px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.rehab__label-num {
+  font-size: 83px;
+  color: $color-link;
+}
+
+.rehab__label-text-sm {
+  font-family: 'museo_sans_cyrl500', 'Arial', sans-serif;
+  font-size: 24px;
+  color: #3e647f;
+}
+
+.rehab__text {
+  width: 502px;
+  margin-top: 26px;
+  font: 24px/1.46 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #748999;
+}
+
+.rehab__subtitle {
+  margin-bottom: 31px;
+  font: 36px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.rehab__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rehab__hint {
+  margin-bottom: 15px;
+  font-family: 'museo_sans_cyrl500', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.rehab__tabs-body {
+  width: 630px;
+}
+
+.rehab__video {
+  display: none;
+}
+
+.rehab__video-text {
+  margin-top: 18px;
+  font-size: 15px;
+  font-family: 'museo_sans_cyrl300', 'Arial', sans-serif;
+  color: #000;
+}
+
+.rehab__tabs-buttons {
+  margin-left: 20px;
+  width: 406px;
+}
+
+.rehab__tabs-button {
+  @include transition;
+
+  display: block;
+  width: 100%;
+  padding: 23px;
+  border-radius: 5px;
+  background: $color-link;
+  font-family: 'museo_sans_cyrl700', 'Arial', sans-serif;;  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: #028fda;
+  }
+
+  &.active{
+    background: #becbd1;
+  }
+
+  & + & {
+    margin-top: 15px;
+  }
+}

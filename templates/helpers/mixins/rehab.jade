@@ -1,0 +1,51 @@
+mixin rehab(options)
+	.rehab
+		.box
+			if options.training
+				.rehab__title
+					span Профессиональная
+					| Спортивная подготовка
+			else
+				.rehab__title Медицинская реабилитация
+
+			.rehab__info
+				.rehab__label Более
+					= ' '
+					span.rehab__label-num	90%
+					.rehab__label-text-sm распространенных патологий
+
+				if options.training
+					.rehab__text Хоккей, волейбол, плавание, гольф, верховая езда, тяжелая атлетика, легкая атлетика и т. д.
+				else
+					.rehab__text Неврологическая реабилитация, ортопедическая реабилитация, лечебная физкультура, гериатрия, спортивная медицина
+
+			.rehab__subtitle Примеры
+
+			if options.training
+				.rehab__hint Волейбол
+			else
+				.rehab__hint Боль в пояснице
+
+			.rehab__tabs
+				.rehab__tabs-body
+					- for (var n = 0; n < 5; n++)
+						.rehab__video
+							.video-section
+								iframe(width='560', height='315', src='https://www.youtube.com/embed/6juBT6EnUIc', frameborder='0', allowfullscreen='')
+
+							.rehab__video-text Отзыв о тренажере HUBER 360 MD от кинезитерапевта Jérome Caullet
+
+				if options.training
+					.rehab__tabs-buttons
+						.rehab__tabs-button.active Волейбол
+						.rehab__tabs-button Плавание
+						.rehab__tabs-button Верховая езда
+						.rehab__tabs-button Тяжелая атлетика
+						.rehab__tabs-button Легкая атлетика
+				else
+					.rehab__tabs-buttons
+						.rehab__tabs-button.active Боль в пояснице
+						.rehab__tabs-button Разрыв крестообразной связки
+						.rehab__tabs-button Разрыв связки
+						.rehab__tabs-button Боль в пояснице
+						.rehab__tabs-button Боль в пояснице

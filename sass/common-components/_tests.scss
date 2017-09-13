@@ -1,0 +1,49 @@
+@import 'variables';
+
+.tests {
+  padding: 60px 0;
+  min-height: 940px;
+  background: #0f2131 url(../img/tests-bg.jpg) 50% 0 no-repeat;
+  background-size: contain;
+  color: #fff;
+}
+
+.tests__title {
+  margin-bottom: 20px;
+  font: 46px/1.2 'museo_sans_cyrl900', Arial, sans-serif;
+
+  span {
+    display: block;
+    margin-bottom: 13px;
+    font: 30px/1.1 'museo_sans_cyrl300', Arial, sans-serif;
+  }
+}
+
+.tests__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -9px;
+}
+
+.tests__item {
+  margin: 26px 9px;
+  width: calc(100% / 4 - 18px);
+  font-size: 15px;
+  color: #a6a9ad;
+}
+
+.tests__item-title {
+  margin-top: 20px;
+  font-family: 'museo_sans_cyrl900', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #daeefe;
+}
+
+.tests__item-img {
+  display: block;
+}
+
+.tests__item-text {
+  margin-top: 10px;
+  font-family: 'museo_sans_cyrl100', Arial, sans-serif;
+}

@@ -1,0 +1,49 @@
+@import 'variables';
+
+.training-types {
+  padding: 86px 0;
+  min-height: 848px;
+  background: #0f2131 url(../img/training-types-bg.jpg) 50% 0 no-repeat;
+  background-size: contain;
+  color: #fff;
+}
+
+.training-types__title {
+  margin-bottom: 100px;
+  font: 46px/1.2 'museo_sans_cyrl700', Arial, sans-serif;
+  text-transform: uppercase;
+
+  span {
+    display: block;
+    margin-bottom: 6px;
+    font: 30px/1.1 'museo_sans_cyrl500', Arial, sans-serif;
+  }
+}
+
+.training-types__list {
+  display: flex;
+  margin: 0 -9px;
+}
+
+.training-type {
+  margin: 9px;
+  width: calc(100% / 4 - 18px);
+  font-size: 15px;
+  color: #a6a9ad;
+}
+
+.training-type__title {
+  margin-bottom: 26px;
+  font-family: 'museo_sans_cyrl900', Arial, sans-serif;
+  text-transform: uppercase;
+  color: #daeefe;
+}
+
+.training-type__img {
+  display: block;
+}
+
+.training-type__text {
+  margin-top: 12px;
+  font-family: 'museo_sans_cyrl100', Arial, sans-serif;
+}

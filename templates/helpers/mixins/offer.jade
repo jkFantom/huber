@@ -33,12 +33,12 @@ mixin offer(options)
 
 					.offer__fields.offer__columns
 						.offer__column
-							.control
+							.control.control_error(data-error-message="Поле заполнено не верно")
 								input.control__field(placeholder='Имя')
 								span.control__line
 
 						.offer__column
-							.control
+							.control.control_error(data-error-message="Поле заполнено не верно")
 								input.control__field(data-mask='phone', placeholder='Телефон')
 								span.control__line
 

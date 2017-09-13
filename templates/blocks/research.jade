@@ -1,0 +1,18 @@
+.research.box
+	.research__title.title Клинические исследования
+
+	.research__grid
+		.research__grid-column
+			a.research__grid-link(href='img/research-img.jpg', rel='group')
+				img.research__grid-img(src='img/research-img.jpg')
+
+		.research__grid-column
+			- for (var n = 0; n < 2; n++)
+				.research__grid-row
+					.research__grid-column
+						a.research__grid-link(href='img/research-img.jpg', rel='group')
+							img.research__grid-img(src='img/research-sm-img.jpg')
+
+					.research__grid-column
+						a.research__grid-link(href='img/research-img.jpg', rel='group')
+							img.research__grid-img(src='img/research-sm-img.jpg')

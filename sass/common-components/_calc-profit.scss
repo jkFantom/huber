@@ -23,7 +23,7 @@
 
 .calc-profit__section {
   & + & {
-    margin-top: 32px;
+    margin-top: 30px;
   }
 }
 
@@ -31,12 +31,18 @@
   max-width: 274px;
 }
 
+.calc-profit__control .control__field {
+  height: auto;
+  border: none;
+  font: 20px/1 'museo_sans_cyrl500', 'Arial', sans-serif;
+}
+
 .calc-profit__hint {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 
 .calc-profit__label {
-  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;;
+  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;
   color: #595959;
 }
 
