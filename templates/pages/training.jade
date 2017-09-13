@@ -1,0 +1,33 @@
+extends ../layouts/main-layout
+
+block head
+  +head({
+    'paths': [
+      'css/style.css'
+    ]
+  })
+
+block content
+  main.content
+    +diagnosis({
+      bg: 'diagnosis-bg-blue.jpg',
+      title: 'Спортивная подготовка',
+      subtitle: '+ Функциональная диогностика',
+      text: true
+    })
+
+    include ../blocks/training-types
+
+    include ../blocks/biofeedback
+
+    include ../blocks/tests
+
+    include ../blocks/case
+
+    include ../blocks/device-features
+
+    include ../blocks/calc-profit
+
+    +offer({
+      className: 'shadow'
+    })

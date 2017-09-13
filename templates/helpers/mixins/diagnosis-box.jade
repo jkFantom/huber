@@ -1,0 +1,14 @@
+mixin diagnosis(options)
+	.diagnosis&attributes({
+		'style': 'background-image: url(img/' + options.bg + ')'
+	})
+		.diagnosis__title= options.title
+			span= options.subtitle
+
+		.diagnosis__aside
+			.diagnosis__hint Новая патентованная технология
+			.diagnosis__tech Многоосевая моторизированная платформа
+			.diagnosis__transcript Нейрофизическая тренировака и оценка с БОС
+
+			if options.text
+				p.diagnosis__text Создание индивидуальных программ тренировок с учетом специфики и функционального состояния спортсменов любых видов спорта
