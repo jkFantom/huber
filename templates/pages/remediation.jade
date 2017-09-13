@@ -1,0 +1,45 @@
+extends ../layouts/main-layout
+
+block head
+  +head({
+    'paths': [
+      'css/style.css',
+      'fancy/jquery.fancybox.css'
+    ]
+  })
+
+block content
+  main.content
+    +diagnosis({
+      bg: 'diagnosis-bg-red.jpg',
+      title: 'Медицинская реабилитация',
+      titleColor: 'red',
+      subtitle: '+ Функциональная диогностика'
+    })
+
+    include ../blocks/training-types
+
+    include ../blocks/biofeedback
+
+    +rehab({})
+
+    include ../blocks/tests
+
+    include ../blocks/flow
+
+    include ../blocks/report
+
+    include ../blocks/device-features
+
+    include ../blocks/case
+
+    .info-block
+      include ../blocks/use
+
+      include ../blocks/research
+
+    include ../blocks/calc-profit
+
+    +offer({
+      className: 'shadow'
+    })

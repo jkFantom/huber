@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Huber360</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="fancy/jquery.fancybox.css">
 	</head>
 	<body>
 		<header class="header">
@@ -15,18 +16,22 @@
 		</header>
 		<main class="content">
 			<div class="diagnosis" style="background-image: url(img/diagnosis-bg-blue.jpg)">
-				<div class="diagnosis__title">Спортивная подготовка<span>+ Функциональная диогностика</span></div>
-				<div class="diagnosis__aside">
-					<div class="diagnosis__hint">Новая патентованная технология</div>
-					<div class="diagnosis__tech">Многоосевая моторизированная платформа</div>
-					<div class="diagnosis__transcript">Нейрофизическая тренировака и оценка с БОС</div>
-					<p class="diagnosis__text">Создание индивидуальных программ тренировок с учетом специфики и функционального состояния спортсменов любых видов спорта</p>
+				<div class="diagnosis__container box">
+					<div class="diagnosis__title">Спортивная подготовка<span class="diagnosis__title-text-blue">+ Функциональная диогностика</span></div>
+					<div class="diagnosis__body"><img src="img/tech-info-icon.png" class="diagnosis__icon">
+						<div class="diagnosis__aside">
+							<div class="diagnosis__hint">Новая патентованная технология</div>
+							<div class="diagnosis__tech">Многоосевая моторизированная платформа</div>
+							<div class="diagnosis__transcript">Нейрофизическая тренировака <br> и оценка с БОС</div>
+							<p class="diagnosis__text">Создание индивидуальных программ тренировок с учетом специфики и функционального состояния спортсменов любых видов спорта</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="training-types">
 				<div class="box">
-					<div class="training-types__title"></div>
-					<div class="training-types">
+					<div class="training-types__title"><span>4 типа</span>Фундаментальных <br> тренировок</div>
+					<div class="training-types__list">
 						<div class="training-type">
 							<div class="training-type__title">Гибкость и подвижность</div><img src="img/training-type1.jpg" class="training-type__img">
 							<p class="training-type__text">БОС система в режиме реального времени предоставляет данные о тренировке, позволяет терапии, а также мотивирует пациента.</p>
@@ -53,14 +58,67 @@
 							<div class="biofeedback__title">
 								<div class="biofeedback__title-text">биологическая<span>обратная связь</span></div>
 								<div class="biofeedback__title-name">бос</div>
-							</div>
-							<div src="img/biofeedback-img.jpg" class="biofeedback__img"></div>
+							</div><img src="img/biofeedback-img.jpg" class="biofeedback__img">
 						</div>
 						<div class="biofeedback__text-block">
 							<p class="biofeedback__text">Система в режиме реального времени предоставляет все данные о тренировке, позволяет отслеживать динамику терапии, а также мотивирует пациента на максимально эффективное выполнение упражнений за счет игровой подачи и соревновательной составляющей.</p>
-							<div class="biofeedback__text-block-title"></div>
+							<div class="biofeedback__text-block-title title">Протоколы</div>
 							<p class="biofeedback__text">Система HUBER, также содержит в себе большое количество встроенных протоколов лечения, что, несомненно, облегчает работу врача-физиотерапевта, освобождая его от необходимости составления специальных планов тренировок для большинства стандартных показаний.</p>
 							<p class="biofeedback__text">Помимо этого врач или тренер может создавать собственные протоколы тренировок для нужд своей практики.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rehab">
+				<div class="box">
+					<div class="rehab__title"><span>Профессиональная</span>Спортивная подготовка</div>
+					<div class="rehab__info">
+						<div class="rehab__label">Более <span class="rehab__label-num">	90%</span>
+							<div class="rehab__label-text-sm">распространенных патологий</div>
+						</div>
+						<div class="rehab__text">Хоккей, волейбол, плавание, гольф, верховая езда, тяжелая атлетика, легкая атлетика и т. д.</div>
+					</div>
+					<div class="rehab__subtitle">Примеры</div>
+					<div class="rehab__hint">Волейбол</div>
+					<div class="rehab__tabs">
+						<div class="rehab__tabs-body">
+							<div class="rehab__video">
+								<div class="video-section">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/6juBT6EnUIc" frameborder="0" allowfullscreen=""></iframe>
+								</div>
+								<div class="rehab__video-text">Отзыв о тренажере HUBER 360 MD от кинезитерапевта Jérome Caullet</div>
+							</div>
+							<div class="rehab__video">
+								<div class="video-section">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/6juBT6EnUIc" frameborder="0" allowfullscreen=""></iframe>
+								</div>
+								<div class="rehab__video-text">Отзыв о тренажере HUBER 360 MD от кинезитерапевта Jérome Caullet</div>
+							</div>
+							<div class="rehab__video">
+								<div class="video-section">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/6juBT6EnUIc" frameborder="0" allowfullscreen=""></iframe>
+								</div>
+								<div class="rehab__video-text">Отзыв о тренажере HUBER 360 MD от кинезитерапевта Jérome Caullet</div>
+							</div>
+							<div class="rehab__video">
+								<div class="video-section">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/6juBT6EnUIc" frameborder="0" allowfullscreen=""></iframe>
+								</div>
+								<div class="rehab__video-text">Отзыв о тренажере HUBER 360 MD от кинезитерапевта Jérome Caullet</div>
+							</div>
+							<div class="rehab__video">
+								<div class="video-section">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/6juBT6EnUIc" frameborder="0" allowfullscreen=""></iframe>
+								</div>
+								<div class="rehab__video-text">Отзыв о тренажере HUBER 360 MD от кинезитерапевта Jérome Caullet</div>
+							</div>
+						</div>
+						<div class="rehab__tabs-buttons">
+							<div class="rehab__tabs-button active">Волейбол</div>
+							<div class="rehab__tabs-button">Плавание</div>
+							<div class="rehab__tabs-button">Верховая езда</div>
+							<div class="rehab__tabs-button">Тяжелая атлетика</div>
+							<div class="rehab__tabs-button">Легкая атлетика</div>
 						</div>
 					</div>
 				</div>
@@ -100,6 +158,64 @@
 					</div>
 				</div>
 			</div>
+			<div class="flow">
+				<div class="box">
+					<div class="flow__label">
+						<div class="flow__label-text">как работает<span>huber</span></div>
+						<div class="flow__label-num">360</div>
+					</div>
+					<div class="flow__steps">
+						<div class="flow__step"><img src="img/step-icon1.png" class="flow__step-icon">
+							<p class="flow__step-text">Создание карточки пациента в базе данных на планшете</p>
+						</div>
+						<div class="flow__step"><img src="img/step-icon2.png" class="flow__step-icon">
+							<p class="flow__step-text">Оценка функционального состояния при помощи тестов</p>
+						</div>
+						<div class="flow__step"><img src="img/step-icon3.png" class="flow__step-icon">
+							<p class="flow__step-text">Анализ тестов, выявление проблемных зон</p>
+						</div>
+						<div class="flow__step"><img src="img/step-icon4.png" class="flow__step-icon">
+							<p class="flow__step-text">Создание индивидуальной программы реабилитации проблемных зон</p>
+						</div>
+						<div class="flow__step"><img src="img/step-icon5.png" class="flow__step-icon">
+							<p class="flow__step-text">Проведение курса реабилитации с возможностью коррекции</p>
+						</div>
+						<div class="flow__step"><img src="img/step-icon6.png" class="flow__step-icon">
+							<p class="flow__step-text">Повторная оценка функционального состояния для отслеживания динамики терапии</p>
+						</div>
+						<div class="flow__step"><img src="img/step-icon7.png" class="flow__step-icon">
+							<p class="flow__step-text">Создание и печать отчетов терапии</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--.report-->
+			<!--	.box-->
+			<!--		.reposrt__title-->
+			<!---->
+			<!--		.reposrt__carousel-->
+			<!--			- for (var n = 0; n < 3; n++)-->
+			<!--				img.reposrt__carousel-img(src='img/slide1.jpg')-->
+			<!--				img.reposrt__carousel-img(src='img/slide2.jpg')-->
+			<!--				img.reposrt__carousel-img(src='img/slide3.jpg')-->
+			<div class="device">
+				<div class="box">
+					<div class="device__container">
+						<div class="device__features">
+							<div class="device__feature">Полностью встроенная система оценки</div>
+							<div class="device__feature">Система фото и видео анализа</div>
+							<div class="device__feature">Ведение базы данных тренировок и отслеживание динамики</div>
+							<div class="device__feature">Прямой экспорт в PDF</div>
+							<div class="device__feature">Создание собственных программ тренировок</div>
+							<div class="device__feature">Беспроводное управление HUBER 360</div>
+							<div class="device__feature">Дублирование информации на мониторе Huber и планшете</div>
+						</div>
+						<div class="device__aside">
+							<div class="device__caption">Удаленное управление <span>с планшета</span></div><img src="img/device-img-lg.jpg" class="device__img">
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="case">
 				<div class="box">
 					<div class="case__title">Клинический кейс<span>по использованию функциональной оценки</span></div>
@@ -116,20 +232,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="device">
-				<div class="box">
-					<div class="device__container">
-						<div class="device__features">
-							<div class="device__feature">Полностью встроенная система оценки</div>
-							<div class="device__feature">Система фото и видео анализа</div>
-							<div class="device__feature">Ведение базы данных тренировок и отслеживание динамики</div>
-							<div class="device__feature">Прямой экспорт в PDF</div>
-							<div class="device__feature">Создание собственных программ тренировок</div>
-							<div class="device__feature">Беспроводное управление HUBER 360</div>
-							<div class="device__feature">Дублирование информации на мониторе Huber и планшете</div>
+			<div class="info-block">
+				<div class="use box">
+					<div class="use__title title">Уже используют huber</div>
+					<div class="use__list">
+						<div class="use__item"><img src="img/use-img1.jpg" class="use__item-img">
+							<div class="use__item-title">Medical Scientific Center for Health</div>
+							<div class="use__item-place">Россия</div>
 						</div>
-						<div class="device__aside">
-							<div class="device__caption">Удаленное управление <span>с планшета</span></div><img src="img/device-img-lg.jpg" class="device__img">
+						<div class="use__item"><img src="img/use-img2.jpg" class="use__item-img">
+							<div class="use__item-title">Клиническая больница МЕДСИ</div>
+							<div class="use__item-place">Россия</div>
+						</div>
+						<div class="use__item"><img src="img/use-img1.jpg" class="use__item-img">
+							<div class="use__item-title">Medical Scientific Center for Health</div>
+							<div class="use__item-place">Россия</div>
+						</div>
+						<div class="use__item"><img src="img/use-img2.jpg" class="use__item-img">
+							<div class="use__item-title">Клиническая больница МЕДСИ</div>
+							<div class="use__item-place">Россия</div>
+						</div>
+					</div>
+				</div>
+				<div class="research box">
+					<div class="research__title title">Клинические исследования</div>
+					<div class="research__grid">
+						<div class="research__grid-column"><a href="img/research-img.jpg" rel="group" class="research__grid-link"><img src="img/research-img.jpg" class="research__grid-img"></a></div>
+						<div class="research__grid-column">
+							<div class="research__grid-row">
+								<div class="research__grid-column"><a href="img/research-img.jpg" rel="group" class="research__grid-link"><img src="img/research-sm-img.jpg" class="research__grid-img"></a></div>
+								<div class="research__grid-column"><a href="img/research-img.jpg" rel="group" class="research__grid-link"><img src="img/research-sm-img.jpg" class="research__grid-img"></a></div>
+							</div>
+							<div class="research__grid-row">
+								<div class="research__grid-column"><a href="img/research-img.jpg" rel="group" class="research__grid-link"><img src="img/research-sm-img.jpg" class="research__grid-img"></a></div>
+								<div class="research__grid-column"><a href="img/research-img.jpg" rel="group" class="research__grid-link"><img src="img/research-sm-img.jpg" class="research__grid-img"></a></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -184,12 +321,12 @@
 							</div>
 							<div class="offer__fields offer__columns">
 								<div class="offer__column">
-									<div class="control">
+									<div data-error-message="Поле заполнено не верно" class="control control_error">
 										<input placeholder="Имя" class="control__field"><span class="control__line"></span>
 									</div>
 								</div>
 								<div class="offer__column">
-									<div class="control">
+									<div data-error-message="Поле заполнено не верно" class="control control_error">
 										<input data-mask="phone" placeholder="Телефон" class="control__field"><span class="control__line"></span>
 									</div>
 								</div>
@@ -237,10 +374,16 @@
 				</div>
 			</div>
 		</footer>
+		<div data-popup="success" class="popup">
+			<div class="popup__title">Спасибо!</div>
+			<div class="popup__text">Ваши данные приняты. В ближайшее время с Вами свяжется наш представитель.</div>
+		</div>
 		<script src="js/jquery-3.2.0.min.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/jquery.maskedinput.js"></script>
 		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.waterwheelCarousel.min.js"></script>
+		<script src="fancy/jquery.fancybox.pack.js"></script>
 		<script src="js/init.js"></script>
 	</body>
 </html>

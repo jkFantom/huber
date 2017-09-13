@@ -3,7 +3,8 @@ extends ../layouts/main-layout
 block head
   +head({
     'paths': [
-      'css/style.css'
+      'css/style.css',
+      'fancy/jquery.fancybox.css'
     ]
   })
 
@@ -12,6 +13,7 @@ block content
     +diagnosis({
       bg: 'diagnosis-bg-blue.jpg',
       title: 'Спортивная подготовка',
+      titleColor: 'blue',
       subtitle: '+ Функциональная диогностика',
       text: true
     })
@@ -20,11 +22,24 @@ block content
 
     include ../blocks/biofeedback
 
+    +rehab({
+      training: true
+    })
+
     include ../blocks/tests
+
+    include ../blocks/flow
+
+    include ../blocks/report
+
+    include ../blocks/device-features
 
     include ../blocks/case
 
-    include ../blocks/device-features
+    .info-block
+      include ../blocks/use
+
+      include ../blocks/research
 
     include ../blocks/calc-profit
 

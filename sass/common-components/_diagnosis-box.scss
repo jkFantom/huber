@@ -5,4 +5,74 @@
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #000;
+}
+
+.diagnosis__container {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.diagnosis__title {
+  margin-bottom: 45px;
+  font: 46px/1.2 'museo_sans_cyrl900', Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+  span {
+    display: block;
+  }
+}
+
+.diagnosis__title-text-blue,
+.diagnosis__title-text-red {
+  font: 36px/1.1 'museo_sans_cyrl300', Arial, sans-serif;
+  text-transform: none;
+}
+
+.diagnosis__title-text-blue {
+  color: #0097e8;
+}
+
+.diagnosis__title-text-red {
+  color: #fb405a;
+}
+
+.diagnosis__body {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1018px;
+  margin: auto;
+}
+
+.diagnosis__icon {
+  margin-right: 46px;
+}
+
+.diagnosis__aside {
+  padding-top: 26px;
+}
+
+.diagnosis__hint {
+  margin-bottom: 6px;
+  font-size: 30px;
+  font-family: 'museo_sans_cyrl500', Arial, sans-serif;
+}
+
+.diagnosis__tech {
+  margin-bottom: 17px;
+  font: 52px/1.2 'museo_sans_cyrl700', Arial, sans-serif;
+}
+
+.diagnosis__transcript {
+  font-size: 30px;
+  font-family: 'museo_sans_cyrl300', Arial, sans-serif;
+  color: #3e647f;
+}
+
+.diagnosis__text {
+  max-width: 420px;
+  margin-top: 17px;
+  font: 15px/1.36 'museo_sans_cyrl900', Arial, sans-serif;
+  color: #384a56;
 }
