@@ -1,0 +1,40 @@
+// common components
+
+@import 'common-components/base-set-components';
+@import 'common-components/banner';
+@import 'common-components/slick';
+@import 'common-components/offer';
+@import 'common-components/seller-info';
+@import 'common-components/device-features';
+@import 'common-components/calc-profit';
+@import 'common-components/diagnosis-box';
+
+// !common components
+
+@import 'index/tech-info';
+@import 'index/reviews';
+
+@import 'technology/techology-box';
+@import 'technology/tech-feature';
+@import 'technology/function';
+@import 'technology/trajectory';
+@import 'technology/platform';
+@import 'technology/accessories';
+
+@import 'purchasing/buttons-section';
+@import 'purchasing/faq';
+@import 'purchasing/delivery';
+@import 'purchasing/features-section';
+
+// contacts
+
+.contacts-wrap {
+  padding-top: 84px;
+  padding-bottom: 268px;
+  margin-bottom: -268px;
+  background: #dfedf5;
+}
+
+@import 'contacts/contacts-box';
+
+// contacts
