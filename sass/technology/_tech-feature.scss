@@ -1,0 +1,34 @@
+@import '../common-components/variables';
+
+.tech-feature {
+  min-height: 848px;
+  padding: 50px 0;
+  background: #0f2131 url(../img/tech-feature-bg.jpg) 50% 50% no-repeat;
+  background-size: contain;
+  color: #fff;
+}
+
+.tech-feature__body {
+  position: relative;
+}
+
+.tech-feature-icon {
+  position: absolute;
+  top: -110px;
+  right: -20px;
+}
+
+.tech-feature__aside {
+  max-width: 504px;
+}
+
+.tech-feature__title {
+  font: 30px/1.28 'museo_sans_cyrl500', 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.tech-feature__subtitle {
+  margin-top: 15px;
+  font: 46px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+}

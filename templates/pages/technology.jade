@@ -3,10 +3,24 @@ extends ../layouts/main-layout
 block head
   +head({
     'paths': [
-      'css/index.css'
+      'css/technology.css'
     ]
   })
 
 block content
   main.content
+    include ../blocks/technology-box
+
+    include ../blocks/tech-feature
+
+    include ../blocks/function
+
+    include ../blocks/trajectory
+
+    include ../blocks/platform
+
+    include ../blocks/device-features
+
+    include ../blocks/accessories
+
     include ../blocks/banner

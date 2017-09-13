@@ -1,0 +1,66 @@
+@import '../common-components/variables';
+
+.trajectory {
+  padding: 40px 0 116px;
+  background: #dfedf5;
+}
+
+.trajectory__title {
+  margin-bottom: 46px;
+  font: 36px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.trajectory__shapes {
+  display: flex;
+  margin: 0 -7px;
+  padding: 10px 0;
+}
+
+.trajectory__shape {
+  margin: 7px;
+  width: calc(100% / 8 - 14px);
+}
+
+.trajectory__shape-img {
+  width: 100%;
+}
+
+.trajectory__shape-title {
+  margin-top: 9px;
+  font: 13px/1.2 'museo_sans_cyrl700', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3e647f;
+}
+
+.trajectory__text {
+  max-width: 540px;
+  margin-top: 43px;
+  color: #000;
+}
+
+.trajectory__devices {
+  display: flex;
+  margin: 35px -7px 0;
+}
+
+.trajectory__device {
+  margin: 7px;
+  width: calc(100% / 4 - 14px);
+}
+
+.trajectory__device-img {
+  margin-bottom: 7px;
+}
+
+.trajectory__device-title {
+  font-family: 'museo_sans_cyrl700', 'Arial', sans-serif;
+  color: #000;
+}
+
+.trajectory__device-text {
+  margin-top: 6px;
+  font-size: 15px;
+}

@@ -1,0 +1,44 @@
+@import '../common-components/variables';
+
+.function {
+  padding: 83px 0;
+  background: #dfedf5;
+}
+
+.function__container {
+  display: flex;
+}
+
+.function__video {
+  flex-grow: 1;
+  padding: 42px 34px 30px 30px;
+  background: #fff;
+}
+
+.function__title {
+  margin-bottom: 11px;
+}
+
+.function__subtitle {
+  margin-bottom: 30px;
+  font: 46px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: $color-link;
+}
+
+.function__text-block {
+  display: flex;
+  flex-direction: column;
+  width: 710px;
+  margin: -26px 0;
+  padding: 60px 54px;
+  border-radius: 4px 4px 4px 0;
+  background: #fff;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.4);
+}
+
+.function__text {
+  & + & {
+    margin-top: 18px;
+  }
+}

@@ -1,0 +1,62 @@
+@import '../common-components/variables';
+
+.device {
+  padding: 70px 0;
+  background: #dfedf5;
+}
+
+
+.device__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 50px 34px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.4);
+}
+
+.device__features {
+  width: 530px;
+  font: 24px/1.24 'museo_sans_cyrl900', 'Arial', sans-serif;
+  color: #244859;
+}
+
+.device__feature {
+  position: relative;
+  padding-left: 60px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 40px;
+    border-top: 3px solid $color-link;
+  }
+
+  & + & {
+    margin-top: 41px;
+  }
+}
+
+.device__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+.device__caption {
+  margin-bottom: 36px;
+  font: 30px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  color: #000;
+
+  span {
+    display: block;
+    margin-top: 3px;
+    font-size: 46px;
+    color: $color-link;
+  }
+}
