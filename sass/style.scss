@@ -8,6 +8,14 @@
 @import 'common-components/device-features';
 @import 'common-components/calc-profit';
 @import 'common-components/diagnosis-box';
+@import 'common-components/training-types';
+@import 'common-components/tests';
+@import 'common-components/biofeedback';
+@import 'common-components/case';
+@import 'common-components/use';
+@import 'common-components/research';
+@import 'common-components/rehab';
+@import 'common-components/_flow';
 
 // !common components
 
@@ -26,7 +34,7 @@
 @import 'purchasing/delivery';
 @import 'purchasing/features-section';
 
-// contacts
+@import 'contacts/contacts-box';
 
 .contacts-wrap {
   padding-top: 84px;
@@ -35,6 +43,30 @@
   background: #dfedf5;
 }
 
-@import 'contacts/contacts-box';
+.info-block {
+  background: #dfedf5;
+  padding-top: 52px;
+  padding-bottom: 222px;
+  margin-bottom: -256px;
+}
 
-// contacts
+.popup {
+  display: none;
+  padding: 28px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.popup__title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-family: 'museo_sans_cyrl700', Arial, sans-serif;
+}
+
+.popup__text {
+  font-size: 20px;
+}
+
+
+

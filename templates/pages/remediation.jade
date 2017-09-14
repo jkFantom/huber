@@ -11,20 +11,17 @@ block head
 block content
   main.content
     +diagnosis({
-      bg: 'diagnosis-bg-blue.jpg',
-      title: 'Спортивная подготовка',
-      titleColor: 'blue',
-      subtitle: '+ Функциональная диогностика',
-      text: true
+      bg: 'diagnosis-bg-red.jpg',
+      title: 'Медицинская реабилитация',
+      titleColor: 'red',
+      subtitle: '+ Функциональная диогностика'
     })
 
     include ../blocks/training-types
 
     include ../blocks/biofeedback
 
-    +rehab({
-      training: true
-    })
+    +rehab({})
 
     include ../blocks/tests
 

@@ -1,0 +1,68 @@
+@import 'variables';
+
+.biofeedback {
+  padding: 90px 0 110px;
+  background: #dfedf5;
+}
+
+.biofeedback__container {
+  display: flex;
+}
+
+.biofeedback__aside {
+  flex-grow: 1;
+  padding: 54px 34px 48px 30px;
+  background: #fff;
+}
+
+.biofeedback__title {
+  display: flex;
+  margin-bottom: 26px;
+  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;
+}
+
+.biofeedback__title-text {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000;
+
+  span {
+    display: block;
+  }
+}
+
+.biofeedback__title-name {
+  margin-left: 7px;
+  font-size: 125px;
+  line-height: .85;
+  text-transform: uppercase;
+  color: #13abfc;
+}
+
+.biofeedback__img {
+  display: block;
+}
+
+.biofeedback__text-block {
+  display: flex;
+  flex-direction: column;
+  width: 543px;
+  margin: -26px 0;
+  padding: 80px 38px 60px;
+  border-radius: 4px 4px 4px 0;
+  background: #fff;
+  box-shadow: 0 6px 51px rgba(94, 123, 150, 0.4);
+}
+
+.biofeedback__text-block-title {
+  margin: 29px 0 20px;
+}
+
+.biofeedback__text {
+  line-height: 1.6;
+
+  & + & {
+    margin-top: 13px;
+  }
+}

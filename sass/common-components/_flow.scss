@@ -1,0 +1,73 @@
+@import 'variables';
+
+.flow {
+  padding: 77px 0 30px;
+  background: #dfedf5;
+}
+
+.flow__label {
+  display: flex;
+  font-family: 'museo_sans_cyrl900', 'Arial', sans-serif;
+}
+
+.flow__label-text {
+  font-size: 46px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000;
+
+  span {
+    display: block;
+    margin-top: 2px;
+    color: $color-link;
+    text-align: right;
+  }
+}
+
+.flow__label-num {
+  margin-left: 8px;
+  font-size: 114px;
+  line-height: .85;
+  color: $color-link;
+}
+
+.flow__steps {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.flow__step {
+  position: relative;
+  width: 25%;
+  margin: 50px 0;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  border-bottom: 2px solid #91a4af;
+
+  &::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: '';
+    height: 5px;
+    width: 5px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #91a4af;
+  }
+
+  &:last-child {
+    border-color: transparent;
+  }
+}
+
+.flow__step-icon {
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(94, 123, 150, 0.23);
+}
+
+.flow__step-text {
+  margin-top: 13px;
+  font: 16px/1.4 'museo_sans_cyrl300', 'Arial', sans-serif;
+}

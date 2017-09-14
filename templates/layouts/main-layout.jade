@@ -3,6 +3,7 @@ include ../helpers/mixins/mixins-all
 include ../helpers/mixins/head
 include ../helpers/mixins/offer
 include ../helpers/mixins/diagnosis-box
+include ../helpers/mixins/rehab
 
 html(lang='en')
   block head
@@ -13,5 +14,7 @@ html(lang='en')
     block content
 
     include ../partials/footer
+
+    include ../blocks/popup-success
 
     include ../partials/scripts

@@ -1,0 +1,40 @@
+@import 'variables';
+
+$gap: 7px;
+
+.research {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.research__title {
+  margin-bottom: 35px;
+}
+
+.research__grid {
+  display: flex;
+  margin: 0 -#{$gap};
+}
+
+.research__grid-column {
+  width: 50%;
+  margin: 0 $gap;
+}
+
+.research__grid-row {
+  display: flex;
+  margin: 0 -#{$gap};
+
+  & + & {
+    margin-top: ($gap * 2) + 1;
+  }
+}
+
+.research__grid-link {
+  display: block;
+}
+
+.research__grid-img {
+  display: block;
+  width: 100%;
+}

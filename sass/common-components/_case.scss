@@ -1,0 +1,37 @@
+@import 'variables';
+
+.case {
+  padding: 80px 0 76px;
+  color: #000;
+}
+
+.case__title {
+  margin-bottom: 43px;
+  font: 46px/1.2 'museo_sans_cyrl900', 'Arial', sans-serif;
+  text-transform: uppercase;
+  
+  span {
+    display: block;
+    margin-top: 3px;
+    font: 24px 'museo_sans_cyrl500', 'Arial', sans-serif;
+  }
+}
+
+.case__row {
+  display: flex;
+  margin: 0 -9px;
+}
+
+.case__item {
+  width: 50%;
+  margin: 9px;
+}
+
+.case__img {
+  display: block;
+}
+
+.case__item-text {
+  margin-top: 15px;
+  font-size: 15px;
+}
