@@ -1,9 +1,19 @@
-//.report
-//	.box
-//		.reposrt__title
-//
-//		.reposrt__carousel
-//			- for (var n = 0; n < 3; n++)
-//				img.reposrt__carousel-img(src='img/slide1.jpg')
-//				img.reposrt__carousel-img(src='img/slide2.jpg')
-//				img.reposrt__carousel-img(src='img/slide3.jpg')
+.report
+	.box
+		.report__title Отчет
+			= ' '
+			span Huber 360
+
+		.report__carousel
+			.dg-container
+				ul.dg-wrapper
+					- for (var n = 0; n < 3; n++)
+						li
+							img(src='img/slide1.jpg')
+						li
+							img(src='img/slide2.jpg')
+						li
+							img(src='img/slide3.jpg')
+				nav
+					span.dg-prev <
+					span.dg-next >

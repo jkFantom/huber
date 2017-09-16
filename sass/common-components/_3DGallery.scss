@@ -1,0 +1,63 @@
+.dg-container {
+  max-width: 836px;
+  margin: auto;
+  position: relative;
+}
+
+.dg-wrapper {
+  padding-top: 62.32%;
+  margin: 0 auto;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.dg-wrapper li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 50px rgba(94, 123, 150, 0.39);
+}
+
+.dg-wrapper li.dg-transition {
+  transition: all .8s ease-in-out;
+}
+
+.dg-wrapper li img {
+  display: block;
+  width: 100%;
+}
+
+.dg-container nav {
+  width: 58px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -29px;
+}
+
+.dg-container nav span {
+  float: left;
+  cursor: pointer;
+  width: 24px;
+  height: 25px;
+  opacity: 0.8;
+}
+
+.dg-container nav span:hover {
+  opacity: 1;
+}
+
+.dg-container nav span.dg-next {
+  background-position: top right;
+  margin-left: 10px;
+}

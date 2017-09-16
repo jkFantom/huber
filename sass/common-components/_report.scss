@@ -1,2 +1,26 @@
 @import 'variables';
 
+.report {
+  padding: 80px 0 102px;
+}
+
+.report__title {
+  margin-bottom: 50px;
+  font: 36px/1.2 'museo_sans_cyrl900', Arial, sans-serif;
+  color: #000;
+
+  span {
+    font-size: 46px;
+    text-transform: uppercase;
+    color: $color-link;
+  }
+}
+
+.report__carousel {
+  padding: 0 40px;
+}
+
+.report__carousel-img {
+  display: block;
+}
+
