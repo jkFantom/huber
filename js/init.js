@@ -72,7 +72,5 @@ $(document).ready(function () {
 
   //!
 
-  $('.report__carousel').gallery({
-
-  });
+  $('.report__carousel').gallery();
 })

@@ -1,7 +1,6 @@
 .dg-container {
   max-width: 836px;
   margin: auto;
-  position: relative;
 }
 
 .dg-wrapper {
@@ -28,7 +27,7 @@
 }
 
 .dg-wrapper li.dg-transition {
-  transition: all .8s ease-in-out;
+  transition: all .65s ease-in-out;
 }
 
 .dg-wrapper li img {
@@ -36,28 +35,58 @@
   width: 100%;
 }
 
-.dg-container nav {
-  width: 58px;
+.dg-nav-button {
+  @include transition(all, .1s, ease);
+
   position: absolute;
-  z-index: 1000;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -29px;
-}
-
-.dg-container nav span {
-  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background: #fff;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(94, 123, 150, 0.3);
   cursor: pointer;
-  width: 24px;
-  height: 25px;
-  opacity: 0.8;
+
+  &:hover {
+    transform: scale(1.08) translateY(-50%);
+  }
+
+  &::after {
+    @include transition(all, .15s, ease);
+
+    position: relative;
+    content: '';
+    height: 16px;
+    width: 16px;
+    border-right: 2px solid #13abfc;
+    border-bottom: 2px solid #13abfc;
+  }
+
+  &:hover::after {
+    border-color: #fb405a;
+  }
 }
 
-.dg-container nav span:hover {
-  opacity: 1;
+.dg-nav-button.dg-prev {
+  left: 14px;
 }
 
-.dg-container nav span.dg-next {
-  background-position: top right;
-  margin-left: 10px;
+.dg-nav-button.dg-next {
+  right: 14px;
+}
+
+.dg-nav-button.dg-prev::after {
+  transform: rotate(135deg);
+  left: 3px;
+}
+
+.dg-nav-button.dg-next::after {
+  transform: rotate(-45deg);
+  right: 3px;
 }

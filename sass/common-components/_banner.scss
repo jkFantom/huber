@@ -2,20 +2,23 @@
 
 .banner {
   background: #7e9aad url(../img/banner-bg.jpg) 50% 50% no-repeat;
-  background-size: contain;
+  background-size: cover;
+  padding-top: 84px;
+  padding-bottom: 120px;
 }
 
 .banner__body {
   display: flex;
-  flex-direction: column;
-  min-height: 862px;
-  padding-top: 124px;
-  padding-bottom: 122px;
+  align-items: flex-end;
 }
 
 .banner__aside {
   width: 652px;
-  align-self: flex-end;
+  padding-bottom: 6px;
+}
+
+.banner__img {
+  margin-right: 45px;
 }
 
 .banner__place {
@@ -76,7 +79,7 @@
 .banner__buttons {
   display: flex;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .banner__button {

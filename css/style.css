@@ -625,26 +625,27 @@ select:focus {
 
 .banner {
   background: #7e9aad url(../img/banner-bg.jpg) 50% 50% no-repeat;
-  background-size: contain;
+  background-size: cover;
+  padding-top: 84px;
+  padding-bottom: 120px;
 }
 
 .banner__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 862px;
-  padding-top: 124px;
-  padding-bottom: 122px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .banner__aside {
   width: 652px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  padding-bottom: 6px;
+}
+
+.banner__img {
+  margin-right: 45px;
 }
 
 .banner__place {
@@ -711,7 +712,7 @@ select:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 .banner__button {
@@ -1884,6 +1885,7 @@ select:focus {
 }
 
 .report__carousel {
+  position: relative;
   padding: 0 40px;
 }
 
@@ -1894,7 +1896,6 @@ select:focus {
 .dg-container {
   max-width: 836px;
   margin: auto;
-  position: relative;
 }
 
 .dg-wrapper {
@@ -1929,7 +1930,7 @@ select:focus {
 }
 
 .dg-wrapper li.dg-transition {
-  transition: all .8s ease-in-out;
+  transition: all .65s ease-in-out;
 }
 
 .dg-wrapper li img {
@@ -1937,30 +1938,72 @@ select:focus {
   width: 100%;
 }
 
-.dg-container nav {
-  width: 58px;
+.dg-nav-button {
+  transition: all 0.1s ease;
   position: absolute;
-  z-index: 1000;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -29px;
-}
-
-.dg-container nav span {
-  float: left;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background: #fff;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(94, 123, 150, 0.3);
   cursor: pointer;
-  width: 24px;
-  height: 25px;
-  opacity: 0.8;
 }
 
-.dg-container nav span:hover {
-  opacity: 1;
+.dg-nav-button:hover {
+  -webkit-transform: scale(1.08) translateY(-50%);
+  -ms-transform: scale(1.08) translateY(-50%);
+  transform: scale(1.08) translateY(-50%);
 }
 
-.dg-container nav span.dg-next {
-  background-position: top right;
-  margin-left: 10px;
+.dg-nav-button::after {
+  transition: all 0.15s ease;
+  position: relative;
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-right: 2px solid #13abfc;
+  border-bottom: 2px solid #13abfc;
+}
+
+.dg-nav-button:hover::after {
+  border-color: #fb405a;
+}
+
+.dg-nav-button.dg-prev {
+  left: 14px;
+}
+
+.dg-nav-button.dg-next {
+  right: 14px;
+}
+
+.dg-nav-button.dg-prev::after {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  left: 3px;
+}
+
+.dg-nav-button.dg-next::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 3px;
 }
 
 .tech-info {
@@ -2123,6 +2166,8 @@ select:focus {
 }
 
 .events .slick-arrow {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2146,6 +2191,7 @@ select:focus {
 }
 
 .events .slick-arrow::after {
+  transition: all 0.15s ease;
   position: relative;
   content: '';
   height: 16px;
@@ -2160,9 +2206,12 @@ select:focus {
 }
 
 .events .slick-next:hover {
-  -webkit-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  transform: scale(1.08);
+  -webkit-transform: scale(1.05) translate3d(0, 0, 0);
+  transform: scale(1.05) translate3d(0, 0, 0);
+}
+
+.events .slick-next:hover::after {
+  border-color: #fb405a;
 }
 
 .events .slick-prev {

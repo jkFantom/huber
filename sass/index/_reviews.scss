@@ -87,6 +87,8 @@
 // slick
 
 .events .slick-arrow {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +105,8 @@
   box-shadow: 0 8px 20px rgba(94, 123, 150, 0.3);
 
   &::after {
+    @include transition(all, .15s, ease);
+
     position: relative;
     content: '';
     height: 16px;
@@ -118,7 +122,11 @@
   margin-top: 45px;
 
   &:hover {
-    transform: scale(1.08);
+    transform: scale(1.05) translate3d(0,0,0);
+  }
+
+  &:hover::after {
+    border-color: #fb405a;
   }
 }
 
