@@ -57,6 +57,7 @@ $(document).ready(function () {
   // !fancy
 
   //tabs
+
   $('.rehab__tabs').each(function(){
     var indexTabsItem = $(this).find('.rehab__tabs-button_active').index();
 
@@ -68,5 +69,8 @@ $(document).ready(function () {
       .parents('.rehab__tabs').find('.rehab__video').eq($(this).index())
       .fadeIn(150).siblings('.rehab__video').hide();
   })
-  //!tabs
+
+  //!
+
+  // $('.reposrt__carousel')
 })
